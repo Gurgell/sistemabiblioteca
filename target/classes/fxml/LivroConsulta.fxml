@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.femass.controller.LivroConsultaController">
+   <children>
+      <ListView fx:id="listaLivros" layoutX="486.0" layoutY="161.0" onKeyPressed="#listaLivros_keyPressed" onMouseClicked="#listaLivros_mouseClicked" prefHeight="321.0" prefWidth="236.0" />
+      <Text layoutX="589.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livros" />
+      <GridPane layoutX="111.0" layoutY="153.0" prefHeight="313.0" prefWidth="301.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="75.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="226.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txt_nome" GridPane.columnIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ano" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Edição" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Genero" GridPane.rowIndex="3" />
+            <ComboBox fx:id="combo_genero" prefHeight="25.0" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txt_edicao" prefHeight="25.0" prefWidth="159.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txt_ano" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Autor(es)" GridPane.rowIndex="5" />
+            <ListView fx:id="lista_autores" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button layoutX="578.0" layoutY="489.0" mnemonicParsing="false" onAction="#btn_limpar" text="Limpar" />
+      <Text layoutX="214.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tela de consulta dos livros">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

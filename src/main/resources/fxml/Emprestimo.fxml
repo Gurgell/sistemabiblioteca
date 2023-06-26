@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1093.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.femass.controller.EmprestimoController">
+   <children>
+      <ComboBox fx:id="cbo_Livros" layoutX="227.0" layoutY="146.0" prefHeight="25.0" prefWidth="227.0" />
+      <ComboBox fx:id="cbo_Copias" layoutX="225.0" layoutY="294.0" prefHeight="25.0" prefWidth="227.0" />
+      <Text layoutX="325.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livros" />
+      <Text layoutX="321.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copias" />
+      <Button layoutX="277.0" layoutY="583.0" mnemonicParsing="false" onAction="#btn_emprestimo" text="Realizar empréstimo" />
+      <ListView fx:id="listaEmprestimos" layoutX="560.0" layoutY="147.0" prefHeight="418.0" prefWidth="338.0" />
+      <Text layoutX="665.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de empréstimos" />
+      <Button layoutX="806.0" layoutY="582.0" mnemonicParsing="false" onAction="#btn_devolverCopia" text="Devolver cópia" />
+      <ComboBox fx:id="cbo_leitor" layoutX="227.0" layoutY="389.0" prefHeight="25.0" prefWidth="227.0" />
+      <Text layoutX="324.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leitor" />
+      <Button layoutX="560.0" layoutY="582.0" mnemonicParsing="false" onAction="#btn_limpar" text="Limpar tela" />
+      <Button layoutX="646.0" layoutY="582.0" mnemonicParsing="false" onAction="#btn_exibirTodos" text="Exibir todos emprestimos" />
+      <Text layoutX="321.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerenciamento de emprestimos">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
